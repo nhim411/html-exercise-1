@@ -440,7 +440,7 @@ Breakpoints:
 }
 
 /* Tablet (740px -> 1023px) */
-@media (min-width: 46.25em) and (max-width: 463.9375em) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
   .wide {
     width: 644px;
   }
