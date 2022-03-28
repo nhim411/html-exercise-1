@@ -1,0 +1,11 @@
+/* break point:
+Desktop: >=1024
+Tablet: 740px -> 1023px
+Phone:  <=739px
+*/
+
+@media screen and (max-width: 739px) {
+  .main__desc-list {
+    flex-direction: column;
+  }
+}
