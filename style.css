@@ -38,18 +38,43 @@ html {
   padding: 8px 16px;
 }
 
+.header__nav-item--actived {
+  color: rgb(37, 168, 129);
+}
+
 .main {
   margin: 50px 0;
 }
 
 .main__avatar {
-  padding: 20px;
+  /* width: 100%;
+  height: auto;
+  padding: 20px; */
+  position: relative;
+  width: 90%;
+}
+
+.main__avatar:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.main__avatar-thumbnail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 100%;
+  background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-size: auto;
+  background-position: center;
 }
 
 .main__avatar img {
-  width: 90%;
-  --height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 100%;
 }
 .main__desc {
@@ -74,7 +99,7 @@ html {
 }
 
 .main__desc-item {
-  --circle: 100px;
+  --circle: 140px;
   width: var(--circle);
   height: var(--circle);
 
@@ -87,35 +112,62 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+.main__desc-item--yellow {
+  background-color: rgb(209, 185, 106);
+}
+.main__desc-item--red {
+  background-color: rgb(206, 118, 107);
+}
+.main__desc-item--blue {
+  background-color: rgb(109, 157, 212);
+}
 .main__desc-intro {
   padding: 10px;
 }
 .footer {
-  background-color: red;
+  background-color: rgb(219, 82, 82);
+  padding: 30px 0;
 }
 .footer__item {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
-  margin: 20px;
 }
 .footer__item-icon {
+  --width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin: 0 10px;
 
-  width: 50px;
-  height: 50px;
-  background-color: rgb(37, 168, 129);
+  width: var(--width);
+  height: var(--width);
+  background-color: rgb(50, 207, 160);
   border-radius: 100rem;
+}
+
+.footer__item-icon > i {
+  color: red;
+  font-size: 16px;
 }
 .footer__item-desc {
 }
 .footer__item-title {
 }
+
 .footer__item-subtitle {
+}
+
+.footer__item-subtitle > p {
+  word-break: break-word;
+}
+
+.footer__item-subtitle > i {
+  color: white;
+  padding: 1rem;
 }

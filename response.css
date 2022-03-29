@@ -8,4 +8,32 @@ Phone:  <=739px
   .main__desc-list {
     flex-direction: column;
   }
+
+  .footer__item {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__item-desc {
+    text-align: center;
+  }
+
+  .footer__item-icon {
+    margin-bottom: 10px;
+  }
+
+  .header__name,
+  .header__job {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+  .main__desc-item {
+    --circle: 100px;
+    width: var(--circle);
+    height: var(--circle);
+  }
 }
